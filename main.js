@@ -26,14 +26,17 @@ while(textoIngresado != "ESC"){
 
 // Pedir un número por prompt, repetir la salida del mensaje “Hola” la cantidad de veces ingresada.
 
+
 let ValorNumerico = +(prompt("Ingrese aquì el numero de veces que desea repetir su saludo"));
 let contador = 0;
 
-while(contador != ValorNumerico){
-    console.log("HOLA");
-    contador = contador + 1;
+if((ValorNumerico != 0)||(ValorNumerico != " ")){
+    while(contador != ValorNumerico){
+        console.log("HOLA");
+        contador = contador + 1;
+    }
+}else{
+    console.log("POR FAVOR INGRESE un valor que no sea CERO")
 }
-
-
 
     
